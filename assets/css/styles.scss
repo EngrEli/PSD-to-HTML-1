@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: GothamBold;
+    src: url(/assets/font/gothamRoundedBold.otf);
+}
+@font-face {
+    font-family: GothamBook;
+    src: url(/assets/font/gothamRoundedBook.otf);
+}
+.jumbotron{
+    padding:4rem 5rem;
+    max-width: 820px!important;
+    margin:0 auto;
+    @media (max-width: 990px) {
+        box-shadow: none!important;
+    }
+    @media (max-width: 450px) {
+        padding: 2rem 1rem;
+    }
+    h1{
+        font-family: GothamBold;
+        font-weight: bold;
+        color:#393939;
+        font-size: 34px;
+    }
+    .sub-title{
+        font-size: 19px;
+        font-family: GothamBook;
+    }
+    p.sub-title,
+    div.text-content p,
+    .bottom p{
+        color:#7c7c7c;
+    }
+    .text-content,
+    .bottom p{
+        font-size: 19px;
+        font-weight: bold;
+        font-family: GothamBook;
+    }
+    .text-content p:nth-of-type(2){
+        padding:0 15px;
+    }
+    .bold-text{
+        font-family: GothamBold;
+        font-weight: bold;
+    }
+    img{
+        // width: 100%;
+        width: calc(100% + 10rem); // twice the value of the parent's padding
+        margin-left: -5rem; // -1 * parent's padding
+        padding:60px 0;
+    }
+    .contact{
+        font-family: GothamBold;
+        font-weight: bold;
+        margin-bottom: 25px;
+        .contact-num{
+            font-size: 24px;
+            margin-bottom: 0;
+            color:#7c7c7c;
+        }
+        .contact-email{
+            font-size: 19px;
+            color:#47ccde;
+        }
+    }
+    button{
+        background-color: #ed487f;
+        padding:20px 0;
+        color:#fff;
+        font-size: 24px;
+        border:1px solid #ed487f;
+        border-radius: 30px;
+        width: 100%;
+        margin:50px 0;
+        transition: 200ms all;
+        &:hover{
+            background-color: #fff;
+            border-color:#ed487f ;
+            color:#ed487f;
+        }
+    }
+}
+footer{
+    padding-top: 50px;
+    max-width: 820px!important;
+    margin:0 auto;
+    color:#9d9c9c;
+    .flex-row-1{
+        display:flex;
+        justify-content: space-between;
+        @media (max-width: 990px) {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        .right-icon{
+            .fa{
+                transition: 200ms all;
+                &:hover{
+                    cursor: pointer;
+                }
+                color:#fff;
+                background: #d5d5d6;
+                border-radius: 50%;
+                height: 35px;
+                width: 35px;
+                text-align: center;
+                padding: 10px 0px;
+                margin-left: 10px;
+            }
+            .fa.fa-twitter{
+                &:hover{
+                    background-color:#1C9CEB;
+                }
+            }
+            .fa.fa-facebook{
+                &:hover{
+                    background-color:#4064AC;
+                } 
+            }
+            .fa.fa-google-plus{
+                &:hover{
+                    background-color:#D64E42;
+                } 
+            }
+        }
+    }
+    p{
+        margin-top:25px;
+        @media (max-width: 990px) {
+            text-align: center;
+        }
+        .hover{
+            &:hover{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+}
