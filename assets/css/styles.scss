@@ -5,11 +5,13 @@
 }
 @font-face {
     font-family: GothamBold;
-    src: url(./assets/font/gothamRoundedBold.otf);
+    // src: url(assets/font/gothamRoundedBold.otf);
+    src: url(../font/gothamRoundedBold.otf);
 }
 @font-face {
     font-family: GothamBook;
-    src: url(./assets/font/gothamRoundedBook.otf);
+    // src: url(assets/font/gothamRoundedBook.otf);
+    src: url(../font/gothamRoundedBook.otf)
 }
 .jumbotron{
     padding:4rem 5rem;
